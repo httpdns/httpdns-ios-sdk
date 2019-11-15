@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "MSDKDns"
   spec.version      = "1.0.9.4"
-  spec.summary      = "HTTPDNS iOS SDK"
+  spec.summary      = "HTTPDNS iOS SDK."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.source       = { :http => "https://raw.githubusercontent.com/httpdns/httpdns-ios-sdk/master/MSDKDns_Framework/MSDKDns_1.0.9.4.zip" }
-  spec.vendored_frameworks = 'MSDKDns_Framework/MSDKDns_IOS_1.0.9.4i/MSDKDns/MSDKDns.framework'
+  spec.vendored_frameworks = 'MSDKDns.framework'
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
