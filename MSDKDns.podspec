@@ -77,8 +77,8 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :http => "https://raw.githubusercontent.com/httpdns/httpdns-ios-sdk/master/release/C98.zip" }
-  spec.vendored_frameworks = 'C98/MSDKDns.framework','C98/BeaconAPI_Base.framework'
+  spec.source       = { :http => "https://raw.githubusercontent.com/httpdns/httpdns-ios-sdk/master/release/C98/MSDKDns.framework.zip" }
+  spec.vendored_frameworks = 'MSDKDns.framework'
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -115,10 +115,10 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
-  spec.frameworks = "Foundation", "CoreTelephony", "SystemConfiguration", "CoreGraphics", "Security"
+  # spec.frameworks = "Foundation", "CoreTelephony", "SystemConfiguration", "CoreGraphics", "Security"
 
   # spec.library   = "iconv"
-  spec.libraries = "c++", "sqlite3", "z"
+  # spec.libraries = "c++", "sqlite3", "z"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -130,6 +130,6 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
+  spec.dependency "BeaconBase_API", "2.7.9"
 
 end

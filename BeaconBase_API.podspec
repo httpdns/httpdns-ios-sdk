@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint MSDKDns_C11.podspec' to ensure this is a
+#  Be sure to run `pod spec lint BeaconBase_API_C11.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
@@ -15,17 +15,17 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "MSDKDns_C11"
-  spec.version      = "1.1.5"
-  spec.summary      = "HTTPDNS C11 iOS SDK."
+  spec.name         = "BeaconBase_API"
+  spec.version      = "2.7.9"
+  spec.summary      = "BeaconBase_API iOS SDK."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "iOS c11 library for HttpDns."
-  spec.homepage     = "https://github.com/tencentyun/httpdns-ios-sdk"
+  spec.description  = "iOS c11 library for BeaconBase_API."
+  spec.homepage     = "https://beacon.qq.com/"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -62,7 +62,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-  spec.platform     = :ios, "6.0"
+  spec.platform     = :ios, "7.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -77,8 +77,8 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :http => "https://raw.githubusercontent.com/httpdns/httpdns-ios-sdk/master/release/C11/MSDKDns_C11.framework.zip" }
-  spec.vendored_frameworks = 'MSDKDns_C11.framework'
+  spec.source       = { :http => "https://raw.githubusercontent.com/httpdns/httpdns-ios-sdk/master/release/BeaconAPI_Base.framework.zip" }
+  spec.vendored_frameworks = 'BeaconAPI_Base.framework'
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -115,10 +115,10 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
-  # spec.frameworks = "Foundation", "CoreTelephony", "SystemConfiguration", "CoreGraphics", "Security"
+  spec.frameworks = "Foundation", "CoreTelephony", "SystemConfiguration", "CoreGraphics", "Security"
 
   # spec.library   = "iconv"
-  # spec.libraries = "c++", "sqlite3", "z"
+  spec.libraries = "c++", "sqlite3", "z"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -130,6 +130,6 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  spec.dependency "BeaconBase_API", "2.7.9"
+  # spec.dependency "JSONKit", "~> 1.4"
 
 end
