@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MSDKDns"
-  spec.version      = "1.1.6.1"
+  spec.version      = "1.2.1"
   spec.summary      = "HTTPDNS C98 iOS SDK."
 
   # This description is used to generate tags and improve search results.
@@ -77,8 +77,8 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :http => "https://raw.githubusercontent.com/httpdns/httpdns-ios-sdk/master/release/C98/MSDKDns.framework.zip" }
-  spec.vendored_frameworks = 'MSDKDns.framework'
+  spec.source       = { :http => "https://raw.githubusercontent.com/httpdns/httpdns-ios-sdk/master/release/C98/1.2.1/MSDKDns.xcframework.zip" }
+  spec.vendored_frameworks = 'MSDKDns.xcframework'
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -130,6 +130,11 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  spec.dependency "BeaconBase_API", "2.7.9"
+  # spec.dependency "BeaconBase_API", "2.7.9"
+
+  spec.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  }
+  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 end
