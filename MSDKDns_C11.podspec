@@ -115,10 +115,10 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
-  # spec.frameworks = "Foundation", "CoreTelephony", "SystemConfiguration", "CoreGraphics", "Security"
+  spec.frameworks = "Foundation", "CoreTelephony", "SystemConfiguration", "CoreGraphics", "Security"
 
   # spec.library   = "iconv"
-  # spec.libraries = "c++", "sqlite3", "z"
+  spec.libraries = "c++", "sqlite3", "z"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -131,9 +131,5 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "BeaconBase_API", "2.7.9"
-  spec.pod_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-  }
-  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 end
