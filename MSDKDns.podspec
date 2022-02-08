@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MSDKDns"
-  spec.version      = "1.3.1"
+  spec.version      = "1.3.2"
   spec.summary      = "HTTPDNS C98 iOS SDK."
 
   # This description is used to generate tags and improve search results.
@@ -36,7 +36,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = { :type => "Copyright", :text => "©2021 Tencent.com"}
+  spec.license      = { :type => "Copyright", :text => "©2022 Tencent.com"}
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -77,7 +77,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :http => "https://raw.githubusercontent.com/httpdns/httpdns-ios-sdk/master/release/C98/1.3.1/MSDKDns.xcframework.zip" }
+  spec.source       = { :http => "https://raw.githubusercontent.com/httpdns/httpdns-ios-sdk/master/release/C98/1.3.2/MSDKDns.xcframework.zip" }
   spec.vendored_frameworks = 'MSDKDns.xcframework'
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
