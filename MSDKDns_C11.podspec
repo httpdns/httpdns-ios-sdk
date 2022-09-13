@@ -130,6 +130,6 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "BeaconBase_API", "2.7.9"
+  spec.dependency "WCDB", "1.0.7.5"
 
 end
