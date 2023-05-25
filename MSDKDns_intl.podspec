@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint MSDKDns_C11.podspec' to ensure this is a
+#  Be sure to run `pod spec lint MSDKDns.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
@@ -15,16 +15,16 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "MSDKDns_C11"
+  spec.name         = "MSDKDns_intl"
   spec.version      = "1.7.0"
-  spec.summary      = "HTTPDNS C11 iOS SDK."
+  spec.summary      = "HTTPDNS C98 iOS International SDK."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "iOS c11 library for HttpDns."
+  spec.description  = "iOS c98 library for HttpDns."
   spec.homepage     = "https://github.com/tencentyun/httpdns-ios-sdk"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
@@ -77,8 +77,8 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :http => "https://raw.githubusercontent.com/httpdns/httpdns-ios-sdk/master/release/C11/1.7.0/MSDKDns_C11.xcframework.zip" }
-  spec.vendored_frameworks = 'MSDKDns_C11.xcframework'
+  spec.source       = { :http => "https://raw.githubusercontent.com/httpdns/httpdns-ios-sdk/master/release/C98/1.7.0/MSDKDns_intl.xcframework.zip" }
+  spec.vendored_frameworks = 'MSDKDns.xcframework'
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -118,7 +118,7 @@ Pod::Spec.new do |spec|
   spec.frameworks = "Foundation", "CoreTelephony", "SystemConfiguration", "CoreGraphics", "Security"
 
   # spec.library   = "iconv"
-  spec.libraries = "c++", "sqlite3", "z"
+  spec.libraries = "z", "sqlite3", "c++"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -130,6 +130,6 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  spec.dependency "WCDB", "1.0.7.5"
+  # spec.dependency "BeaconBase_API", "2.7.9"
 
 end

@@ -15,9 +15,9 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "MSDKDns_C11"
+  spec.name         = "MSDKDns_C11_intl"
   spec.version      = "1.7.0"
-  spec.summary      = "HTTPDNS C11 iOS SDK."
+  spec.summary      = "HTTPDNS C11 iOS International SDK."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -77,7 +77,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :http => "https://raw.githubusercontent.com/httpdns/httpdns-ios-sdk/master/release/C11/1.7.0/MSDKDns_C11.xcframework.zip" }
+  spec.source       = { :http => "https://raw.githubusercontent.com/httpdns/httpdns-ios-sdk/master/release/C11/1.7.0/MSDKDns_C11_intl.xcframework.zip" }
   spec.vendored_frameworks = 'MSDKDns_C11.xcframework'
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
