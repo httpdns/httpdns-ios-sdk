@@ -24,7 +24,7 @@ Pod::Spec.new do |spec|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "iOS c11 library for HttpDns."
+  spec.description  = "iOS c11 library for HttpDns International."
   spec.homepage     = "https://github.com/tencentyun/httpdns-ios-sdk"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.source       = { :http => "https://raw.githubusercontent.com/httpdns/httpdns-ios-sdk/master/release/C11/1.7.0/MSDKDns_C11_intl.xcframework.zip" }
-  spec.vendored_frameworks = 'MSDKDns_C11.xcframework'
+  spec.vendored_frameworks = 'MSDKDns_C11_intl.xcframework'
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
