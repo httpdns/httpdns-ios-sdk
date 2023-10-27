@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MSDKDns_C11"
-  spec.version      = "1.8.1"
+  spec.version      = "1.9.0"
   spec.summary      = "HTTPDNS C11 iOS SDK."
 
   # This description is used to generate tags and improve search results.
@@ -77,7 +77,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :http => "https://raw.githubusercontent.com/httpdns/httpdns-ios-sdk/master/release/C11/1.8.1/MSDKDns_C11.xcframework.zip" }
+  spec.source       = { :http => "https://raw.githubusercontent.com/httpdns/httpdns-ios-sdk/master/release/C11/1.9.0/MSDKDns_C11.xcframework.zip" }
   spec.vendored_frameworks = 'MSDKDns_C11.xcframework'
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
