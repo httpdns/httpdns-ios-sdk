@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MSDKDns_intl"
-  spec.version      = "1.10.1"
+  spec.version      = "1.10.2"
   spec.summary      = "HTTPDNS C98 iOS International SDK."
 
   # This description is used to generate tags and improve search results.
@@ -77,7 +77,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :http => "https://raw.githubusercontent.com/httpdns/httpdns-ios-sdk/master/release/C98/1.10.1/MSDKDns_intl.xcframework.zip" }
+  spec.source       = { :http => "https://raw.githubusercontent.com/httpdns/httpdns-ios-sdk/master/release/C98/1.10.2/MSDKDns_intl.xcframework.zip" }
   spec.vendored_frameworks = 'MSDKDns_intl.xcframework'
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
